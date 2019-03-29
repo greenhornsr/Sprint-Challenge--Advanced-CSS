@@ -1,1 +1,46 @@
 // Mixins Here
+// Reg Mixins
+.disp-flex(){
+    display: flex;
+    justify-content: space-between;
+}
+
+.marg-bottom(){
+    margin-bottom: 20px;
+}
+
+// Sign up Parametric Mixin
+.button-create(@width, @height, @b-rad){
+    width: @width;
+    height: @height;
+    border-radius: @b-rad;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    &:hover{
+        background-color: greenyellow;
+        color: black;
+    }
+}
+
+// Animation Parametric Mixin
+.font-size-bulger(@StoF-fontsize){
+    @keyframes fontbulger {
+        0%, 100% {
+          font-size: @StoF-fontsize;
+        }
+        50% {
+          font-size: 24px;
+        }
+      }
+      @keyframes colorchng{
+          0%, 100%{
+              color: white;
+          }
+          30%, 60%{
+              color: red;
+          }
+      }
+      animation: fontbulger 2s infinite, colorchng 4s infinite;
+}
