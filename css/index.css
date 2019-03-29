@@ -199,7 +199,12 @@ p {
   }
 }
 .nav-head .nav-bar img {
-  width: 100%;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .nav-head .nav-bar img {
+    width: 100%;
+  }
 }
 footer {
   color: #22283B;
