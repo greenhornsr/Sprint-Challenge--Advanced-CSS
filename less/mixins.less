@@ -34,5 +34,13 @@
           font-size: 24px;
         }
       }
-      animation: fontbulger 2s infinite;
+      @keyframes colorchng{
+          0%, 100%{
+              color: white;
+          }
+          30%, 60%{
+              color: red;
+          }
+      }
+      animation: fontbulger 2s infinite, colorchng 4s infinite;
 }
