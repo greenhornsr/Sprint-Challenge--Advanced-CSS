@@ -9,7 +9,7 @@
     margin-bottom: 20px;
 }
 
-// Sign up Mixin
+// Sign up Parametric Mixin
 .button-create(@width, @height, @b-rad){
     width: @width;
     height: @height;
@@ -22,5 +22,17 @@
         background-color: greenyellow;
         color: black;
     }
+}
 
+// Animation Parametric Mixin
+.font-size-bulger(@StoF-fontsize){
+    @keyframes fontbulger {
+        0%, 100% {
+          font-size: @StoF-fontsize;
+        }
+        50% {
+          font-size: 24px;
+        }
+      }
+      animation: fontbulger 2s infinite;
 }
