@@ -243,6 +243,10 @@ footer {
   text-align: center;
   line-height: 25px;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: greenyellow;
+  color: black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

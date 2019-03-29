@@ -1,4 +1,15 @@
 // Mixins Here
+// Reg Mixins
+.disp-flex(){
+    display: flex;
+    justify-content: space-between;
+}
+
+.marg-bottom(){
+    margin-bottom: 20px;
+}
+
+// Sign up Mixin
 .button-create(@width, @height, @b-rad){
     width: @width;
     height: @height;
@@ -7,5 +18,9 @@
     color: white;
     text-align: center;
     line-height: 25px;
+    &:hover{
+        background-color: greenyellow;
+        color: black;
+    }
 
 }
